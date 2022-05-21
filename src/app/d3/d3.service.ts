@@ -1,6 +1,12 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { Node, Link, ForceDirectedGraph } from './models';
-import * as d3 from 'd3';
+import * as d3 from './d3.module';
+export * from '../d3-axis/d3-axis.module';
+export * from '../d3-format/d3-format.module';
+export * from '../d3-interpolate/d3-interpolate.module';
+export * from '../d3-scale/d3-scale.module';
+export * from '../d3-selection/d3-selection.module';
+export * from '../d3-shape/d3-shape.module';
 
 @Injectable()
 export class D3Service {

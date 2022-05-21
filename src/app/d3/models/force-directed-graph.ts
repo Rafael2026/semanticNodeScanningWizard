@@ -1,13 +1,20 @@
-import { EventEmitter } from '@angular/core';
+/*import { EventEmitter } from '@angular/core';
 import { Link } from './link';
-import { Node } from './node';
-import * as d3 from 'd3';
+import { Node } from './node';*/
+import * as d3 from '../d3.module';
+export * from '../d3.module';
+export * from '../../d3-axis/d3-axis.module';
+export * from '../../d3-format/d3-format.module';
+export * from '../../d3-interpolate/d3-interpolate.module';
+export * from '../../d3-scale/d3-scale.module';
+export *  from '../../d3-selection/d3-selection.module';
+export * from '../../d3-shape/d3-shape.module';
 
 const FORCES = {
-  LINKS: (n: number) => { return 1 / (n*10) },
+  LINKS: (n: number) => {return (1 / (n*10)); },
   COLLISION: 10,
   CHARGE: -2
-}
+};
 
 export class ForceDirectedGraph {
   public ticker: EventEmitter<d3.Simulation<Node, Link>> = new EventEmitter();
@@ -63,7 +70,7 @@ export class ForceDirectedGraph {
       throw new Error('missing options when initializing simulation');
     }
 
-    /** Creating the simulation */
+    // Creating the simulation
     if (!this.simulation) {
       const ticker = this.ticker;
 
@@ -87,10 +94,10 @@ export class ForceDirectedGraph {
       this.initLinks();
     }
 
-    /** Updating the central force of the simulation */
+    // Updating the central force of the simulation
     this.simulation.force('centers', d3.forceCenter(options.width / 2, options.height / 2));
 
-    /** Restarting the simulation internal timer */
+    // Restarting the simulation internal timer
     this.simulation.restart();
   }
 }

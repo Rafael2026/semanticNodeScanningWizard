@@ -25,19 +25,27 @@ import { DataGraphService } from './services/data-graph.service';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { CriteriaComponent } from './criteria/criteria.component';
+
 
 @NgModule({
+
   declarations: [
     AppComponent,
-    GraphComponent,
-    LinkVisualComponent,
+    GraphComponent, LinkVisualComponent,
     NodeVisualComponent,
     ...SHARED_VISUALS,
     ...D3_DIRECTIVES,
     ChooseObjectDialogComponent,
     StartScreenComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    ProductDetailsComponent,
+    ProductAlertsComponent,
+    CriteriaComponent
   ],
+
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -54,7 +62,9 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     MatSidenavModule,
     MatProgressSpinnerModule
   ],
+
   providers: [D3Service, DbPediaService, DataGraphService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
