@@ -9,14 +9,19 @@ export * from '../../d3-interpolate/d3-interpolate.module';
 export * from '../../d3-scale/d3-scale.module';
 export *  from '../../d3-selection/d3-selection.module';
 export * from '../../d3-shape/d3-shape.module';
+import { EventEmitter } from '@angular/core';
+import { Link } from './link';
+import { Node } from './node';
+import { Simulation } from 'src/app/simulation/simulation.module';
 
 const FORCES = {
-  LINKS: (n: number) => {return (1 / (n*10)); },
+  LINKS: (n: number) => {return 1 / (n*10) },
   COLLISION: 10,
   CHARGE: -2
 };
 
 export class ForceDirectedGraph {
+
   public ticker: EventEmitter<d3.Simulation<Node, Link>> = new EventEmitter();
   public simulation: d3.Simulation<any, any>;
 
