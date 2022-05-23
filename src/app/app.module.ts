@@ -31,6 +31,10 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { AppSpinnerComponent } from './app-spinner/app-spinner.component';
+import { GraphComponentComponent } from './graph-component/graph-component.component';
+import { ChooseObjectDialogComponentComponent } from './choose-object-dialog-component/choose-object-dialog-component.component';
+import { EscapeComponent } from './util/escape/escape.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,10 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
+    AppSpinnerComponent,
+    GraphComponentComponent,
+    ChooseObjectDialogComponentComponent,
+    EscapeComponent,
   ],
 
 @NgModule({
