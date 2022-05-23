@@ -25,27 +25,39 @@ import { DataGraphService } from './services/data-graph.service';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { AppModuleComponent } from './app-module/app-module.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
-import { CriteriaComponent } from './criteria/criteria.component';
-
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CartComponent } from './cart/cart.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
-
   declarations: [
     AppComponent,
-    GraphComponent, LinkVisualComponent,
+    TopBarComponent,
+    ProductListComponent,
+    ProductAlertsComponent,
+    ProductDetailsComponent,
+    CartComponent,
+    ShippingComponent,
+  ],
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    GraphComponent,
+    LinkVisualComponent,
     NodeVisualComponent,
     ...SHARED_VISUALS,
     ...D3_DIRECTIVES,
     ChooseObjectDialogComponent,
     StartScreenComponent,
     SpinnerComponent,
-    ProductDetailsComponent,
+    ProductListComponent,
     ProductAlertsComponent,
-    CriteriaComponent
+    AppModuleComponent
   ],
-
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -62,9 +74,7 @@ import { CriteriaComponent } from './criteria/criteria.component';
     MatSidenavModule,
     MatProgressSpinnerModule
   ],
-
   providers: [D3Service, DbPediaService, DataGraphService],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
