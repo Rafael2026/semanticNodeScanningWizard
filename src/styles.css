@@ -1,51 +1,90 @@
-* {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 200;
-  }
-  
-  html, body {
-    
-    background: white;
-    margin: 20px;
-    color: #3e4144;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  dd {
-    font-weight: bold;
-  }
-  
-  button {
-    background-color: black;
-    border-radius: 5px;
-    border: 0px;
-    color: white;
-    cursor: pointer;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding: 5px 10px;
-  }
-  
-  button:hover {
-    background-color: #3e4144;
-  }
-  
-  button:focus{ 
-    outline: none;
-  }
-  
-  .p-1 {
-    padding: 1px;
-  }
-.row {
-  display: flex;
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* You can add global styles to this file, and also import other style files */
+.custom-dialog-container {
+    margin: 10px;
+    background-color: khaki;
+        /* position: absolute !important;
+        top: 10%;
+        left: 50%; */
+    width: 18%;
+    height: 40%;
+    border-radius: 10px;
 }
-.col {
-  flex-grow: 1;
-  margin-right: 10px;
+
+/* .custom-dialog-container .mat-dialog-title {
+    background-color: rgb(202, 188, 61);
+    padding: 40;
+} */
+
+/* .custom-dialog-container .mat-dialog-label {
+    background-color: blue;
+    padding: 40;
+    text-emphasis-color: blue;
+    border-block-color: blue;
+} */
+
+/* .custom-dialog-container .mat-dialog-list {
+    background-color: khaki;
+    padding: 40;
+    border-inline-color: red;  
+} */
+
+/* .mat-option { */
+    /* background-color: khaki; */
+    /* padding: 400; */
+    /* max-width: 50%; */
+/* } */
+
+/* .border-dialog {
+    border-block-color: red;
+} */
+
+.mat-select-panel {
+    /* max-width: 200px !important;
+    min-width: 100px !important; */
+    background-color: khaki;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    /* position: relative;
+    top: 120px;
+    left: 200px; */
 }
-input {
-  display: block;
-  margin: 5px;
+
+/* .cdk-overlay-container {
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    height: 200px;
+    left: 300px;
+} */
+
+/* .cdk-overlay-pane {
+min-width: 400px !important;
+} */
+
+.mat-dialog-actions {
+    position: relative;
+    margin: 15px;
+    top: 100px;
+}
+
+.mat-dialog-content {
+    margin: 10px !important;
+    overflow: hidden !important;
+    position: relative;
+    top: 20px;
+    background-color: rgba(240, 230, 140, 0.658);
+}
+
+.mat-dialog-container {
+    background-color: khaki;
+}
+
+.main-empty {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    text-align: center;
 }
