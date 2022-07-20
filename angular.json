@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "sparqlQueryEditor"
+  "defaultProject": "sparqlQueryEditor",
+  "cli": {
+    "analytics": "503ca688-5c3e-4f21-afd3-c6e9c9e948a5"
+  }
 }
