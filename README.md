@@ -1,25 +1,33 @@
 # SparqlQueryEditor
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+<p>
+  This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 9.1.7.
+</p>
 
 ## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p>
+  Run <h2>ng serve</h2> for a dev server. <a href="http://localhost:4200/">Navigate to localhost.</a> The app will automatically reload if you change any of the source files.
+</p>
 
 ## Code scaffolding
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<p>
+  Run <h2>ng generate component component-name</h2> component-name to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+</p>
 
 ## Build
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<p>Run <h2></h2>ng build</h2> to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+</p>
 
 ## Running unit tests
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p>
+  Run <h2>ng test</h2> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.
+</p>
 
 ## Running end-to-end tests
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+<p>
+  Run <h2>ng e2e</h2> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protactor</a>.
+</p>
 
 ## Further help
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Latest dependencies
-<p>npm audit && ncu: Checks if there is an update for a dependency</p> 
-
-<p>ncu -u: Update all dependencies</p>
+<p>
+To get more help on the Angular CLI use <h2>ng help</h2> or go checkout the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>
+</p>
