@@ -11,7 +11,7 @@
     "arrow-return-shorthand": true,
     "curly": true,
     "deprecation": {
-      "severity": "warning"
+      "severity": "critical"
     },
     "component-class-suffix": true,
     "contextual-lifecycle": true,
