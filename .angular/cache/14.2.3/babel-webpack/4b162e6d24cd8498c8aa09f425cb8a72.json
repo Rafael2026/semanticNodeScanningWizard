@@ -1,1 +1,0 @@
-{"ast":null,"code":"export class Link {\n  constructor(source, target, name, label) {\n    this.displayName = () => {\n      return this.label[0].toUpperCase() + this.label.substr(1).toLowerCase();\n    };\n\n    this.source = source;\n    this.target = target;\n    this.name = name;\n    this.label = label;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

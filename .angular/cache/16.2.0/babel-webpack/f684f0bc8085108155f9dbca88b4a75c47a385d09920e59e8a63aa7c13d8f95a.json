@@ -1,0 +1,1 @@
+{"ast":null,"code":"const CONFIG = {\n  N: 500,\n  SPECTRUM: [\"rgb(176,212,243)\", \"rgb(0,0,0)\", \"rgb(237, 190, 133)\", \"rgb(143,138,131)\", \"rgb(128,186,236)\", \"rgb(77,158,228)\", \"rgb(162,242,173)\", \"rgb(38,137,223)\", \"rgb(0,116,217)\", \"rgb(206,242,162)\"]\n};\nexport default CONFIG;","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
